@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/media/css/main.css" type="text/css" media="screen" title="main css" charset="utf-8">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="headwrap" class="wrap">
+                <div id="header" class="inner">
+                    <img src="/media/img/tp.png" alt="" />
+                    <h1>Toilet App</h1>
+                </div>
+            </div>
+            <div id="menuwrap" class="wrap">
+                <div id="menu" class="inner">
+                    <ul>
+                        <li><a href="#" class="selected">Dashboard</a></li>
+                        <li><a href="#">Topics</a></li>
+                        <li><a href="#">People</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contwrap" class="wrap">
+                <div id="content" class="inner">
+                    {% block content %}
+                        Content Goes Here.
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

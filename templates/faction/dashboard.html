@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="maincont">
+        <div id="companytitle">
+            <h1>{{company.company}}</h1>
+            <h4>Dashboard View</h4>
+        </div>
+        <div id="untop" class="blob">
+            <div class="blobtitle">
+                <h4>Un-Topic-ed Externals</h4>
+            </div>
+            <div class="blobcontent">
+                <ul>
+                    <li>GS: 10874 : Things Aren't working</li>
+                    <li>GS: 10888 : I don't know how to do this</li>
+                </ul>
+            </div>
+        </div>
+        <div id="involved" class="blob">
+            <div class="blobtitle">
+                <h4>Topics I am Involved In</h4>
+            </div>
+            <div class="blobcontent">
+                <ul>
+                    <li>Halp!</li>
+                    <li>Broken Stuff bug</li>
+                </ul>
+            </div>
+        </div>
+        <div id="tasks" class="blob">
+            <div class="blobtitle">
+                <h4>Active Tasks</h4>
+            </div>
+            <div class="blobcontent">
+                <table>
+                    <tr>
+                        <th>Topic</th>
+                        <th>Description</th>
+                        <th>State</th>
+                        <th>Time Spent</th>
+                    </tr>
+                    <tr>
+                        <td>Halp!</td>
+                        <td>Get back to cust.</td>
+                        <td>In Prog.</td>
+                        <td>15 min</td>
+                    </tr>
+                    <tr>
+                        <td>Halp!</td>
+                        <td>Do things please</td>
+                        <td>Finished</td>
+                        <td>1 hour</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="topics">
+        <div class="blob">
+            <div class="blobtitle">
+                <h4>Open Topics</h4>
+            </div>
+            <div class="blobcontent">
+                <ul>
+                    <li>Topic 1</li>
+                    <li>Topic 2</li
+                </ul>
+                <hr/>
+                <a href="#">Create New Topic</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

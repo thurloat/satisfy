@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <ul>
+        {% for cp in companies %}
+            {{cp.company}} ({{cp.company_url}}) -- updated id: {{cp.last_id}}
+        {% endfor %}        
+    </ul>
+{% endblock %}
